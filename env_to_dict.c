@@ -1,26 +1,49 @@
 #include "env.h"
 
 /**
-  * dict_to_env - creates linked list from environment
-  * @head: argument passed
-  * Return: pointer to list
+  * env_to_dict - creates a list from environment
+  * @env: environment passed
+  * Return: head
   */
-char **dict_to_env(env_t *head)
+env_t *env_to_dict(char **env)
 {
-	env_t *tmp = head;
-	char **env;
-	size_t len = 0;
+	env_t *head = NULL;
 
-	while (tmp)
-		++len, tmp = tmp->next;
+	if (!_env_to_dict(&head, env))
+		free_dict(&head);
 
-	env = malloc(sizeof(char *) * (len + 1));
-	if (!env)
+	return (head);
+}
+
+
+/**
+ * _env_to_dict - turn the environment into a linked list (helper)
+ * @tailptr: pointer to the tail of the list
+ * @env: environment
+ *
+ * Return: pointer to the tail of the list
+ */
+env_t *_env_to_dict(env_t **tailptr, char **env)
+{
+	env_t *tail;
+	char *env_str;
+	ssize_t key_len;
+
+	if (!*env)
+		return (*tailptr);
+
+	env_str = _strdup(*env);
+	if (!env_str)
 		return (NULL);
 
-	for (len = 0; head; head = head->next)
-		env[len++] = strjoin(NULL, "=", head->key, head->val);
-	env[len] = NULL;
+	key_len = _strchr(*env, '=');
 
-	return (env);
+	if (key_len == -1)
+		return (NULL);
+
+	env_str[key_len] = '\0';
+	tail = add_dict_node_end(tailptr, env_str, env_str + key_len + 1);
+	free(env_str);
+
+	return (_env_to_dict(&tail, env + 1));
 }
