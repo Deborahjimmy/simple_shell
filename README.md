@@ -283,8 +283,8 @@ $
 
 ## Authors :black_nib:
 
-* **Gbadamosi Ayomide** **||** [Github](https://github.com/AyoGbadamosi) **|** [Twitter](https://twitter.com/Guccc_ee) **|** [email](gbadamosiayo16@gmail.com)  
-* **Anigbogu Mesoma** **||** [Github](https://github.com/mesoma-hub) **|** [Twitter](https://twitter.com/A_Mesoma) **|** [email](anigbogumesoma1@gmail.com)
+* **Deborah Jimmy** **||** [Github](https://github.com/Deborahjimmy) **|** **|** [email](deborahjimmy.dj@gmail.com)  
+* **Cynthia Achor-Okezie** **||** [Github](https://github.com/CyntTech) **|** **|** [email](cynthyok4luv@gmail.com)
 
 ## Acknowledgements :pray:
 
