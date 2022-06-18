@@ -284,7 +284,7 @@ $
 ## Authors :black_nib:
 
 * **Deborah Jimmy** **||** [Github](https://github.com/Deborahjimmy) **|** **|** [email](deborahjimmy.dj@gmail.com)  
-* **Cynthia Achor-Okezie** **||** [Github](https://github.com/CyntTech) **|** **|** [email](cynthyok4luv@gmail.com)
+* **Cynthia Amaji** **||** [Github](https://github.com/CyntTech) **|** **|** [email](cynthyok4luv@gmail.com)
 
 ## Acknowledgements :pray:
 
