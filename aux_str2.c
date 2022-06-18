@@ -2,7 +2,7 @@
 
 /**
  * _strdup - duplicates a str in the heap memory.
- * @s: Type char pointer str
+ * @s: Types char pointer str
  * Return: duplicated str
  */
 char *_strdup(const char *s)
@@ -20,7 +20,7 @@ char *_strdup(const char *s)
 
 /**
  * _strlen - Returns the lenght of a string.
- * @s: Type char pointer
+ * @s: Types char pointer
  * Return: Always 0.
  */
 int _strlen(const char *s)
